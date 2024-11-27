@@ -31,6 +31,10 @@ public class Product {
         return amount;
     }
 
+    public Boolean sameId(Long id) {
+        return this.id.equals(id);
+    }
+
     @Override
     public boolean equals(Object o) {
         if (o == null || getClass() != o.getClass()) return false;
